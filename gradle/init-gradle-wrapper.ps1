@@ -21,7 +21,8 @@ if ((Test-Path -Path ((Get-Item -Path ".\").FullName + "\gradle\wrapper\gradle-w
 }
 
 # HTTPS is not used because it gets complicated with Powershell and .Net framework versions depending on Windows versions
-Invoke-WebRequest -outf gradle\wrapper\gradle-wrapper.jar http://dl.bintray.com/apacheofbiz/GradleWrapper/v3.2.1/gradle-wrapper.jar
-Invoke-WebRequest -outf gradle\wrapper\gradle-wrapper.properties http://dl.bintray.com/apacheofbiz/GradleWrapper/v3.2.1/gradle-wrapper.properties
-Invoke-WebRequest -outf gradlew.bat http://dl.bintray.com/apacheofbiz/GradleWrapper/v3.2.1/gradlew.bat
+# yinlei change v3.2.1--v5.6.4
+Invoke-WebRequest -outf gradle\wrapper\gradle-wrapper.jar http://dl.bintray.com/apacheofbiz/GradleWrapper/v5.6.4/gradle-wrapper.jar
+Invoke-WebRequest -outf gradle\wrapper\gradle-wrapper.properties http://dl.bintray.com/apacheofbiz/GradleWrapper/v5.6.4/gradle-wrapper.properties
+Invoke-WebRequest -outf gradlew.bat http://dl.bintray.com/apacheofbiz/GradleWrapper/v5.6.4/gradlew.bat
 
