@@ -73,6 +73,8 @@ the command line at the OFBiz top level directory (folder).
 === Download the Gradle wrapper:
 
 MS Windows: `init-gradle-wrapper`
+在Windows10上面如果不能执行，那么是Windows10的安全策略问题，在init-gradle-wrapper.bat中修改成本地执行，就OK了。
+.ps1文件是powershell的可执行文件。
 
 Unix-like OS: `./gradle/init-gradle-wrapper`
 
@@ -93,6 +95,8 @@ Unix-like OS: `./gradlew cleanAll loadAll`
 === Start OFBiz:
 
 MS Windows: `gradlew ofbiz`
+执行这个找不到类的错误，是真的找不到，是上面那个步骤没有正确执行。自己复制的gradle-wrapper.jar中缺少那个类。
+方法就是让上面的步骤执行成功。修改gradle文件夹中的 sh和ps1中的gradle版本为高版本。
 
 Unix-like OS: `./gradlew ofbiz`
 
