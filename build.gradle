@@ -109,7 +109,7 @@ configurations {
 }
 
 dependencies {
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.49'
     // ofbiz compile libs
     compile 'apache-xerces:xercesImpl:2.9.1'
     compile 'com.google.zxing:core:3.3.1'
